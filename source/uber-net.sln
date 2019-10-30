@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uber-net", "uber-net\uber-net.csproj", "{F3C55120-00E4-4332-8256-E0589A84AFB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uber-net", "uber-net\uber-net.csproj", "{F3C55120-00E4-4332-8256-E0589A84AFB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uber-net-tests", "uber-net-tests\uber-net-tests.csproj", "{9C0A3D8C-650F-46CA-8103-0B38ABE2E18A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F3C55120-00E4-4332-8256-E0589A84AFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3C55120-00E4-4332-8256-E0589A84AFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3C55120-00E4-4332-8256-E0589A84AFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0A3D8C-650F-46CA-8103-0B38ABE2E18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0A3D8C-650F-46CA-8103-0B38ABE2E18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0A3D8C-650F-46CA-8103-0B38ABE2E18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0A3D8C-650F-46CA-8103-0B38ABE2E18A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
