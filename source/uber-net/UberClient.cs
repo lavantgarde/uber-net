@@ -12,9 +12,12 @@ namespace uber_net
 {
     public class UberClient : ResponseHeader
     {
-        private const string _url = @"https://api.uber.com";
+        private const string _productionUrl = @"https://api.uber.com";
+        private const string _sandboxUrl = @"https://sandbox-api.uber.com";
+
         private const string _apiVersion = "v1.2";
 
+        private readonly string _url = _productionUrl;
         private readonly string _token;
         private readonly HttpClient _httpClient;
         private TokenTypes _tokenType;
@@ -35,6 +38,9 @@ namespace uber_net
         /// <param name="httpClient">The http client to use.</param>
         public UberClient(TokenTypes tokenType, string token, HttpClient httpClient)
         {
+#if DEBUG
+            _url = _sandboxUrl;
+#endif
             _tokenType = tokenType;
             _token = token;
             _httpClient = httpClient;
